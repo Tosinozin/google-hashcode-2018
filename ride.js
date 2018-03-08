@@ -85,9 +85,9 @@ function assignRidesToVehicles(rides,vehicles){
       //final position of vehicle 0 and vehicle 1
       let modul = i % assignment.length;
       if(modul !== 0){
-        assignment[modul-1].push(rides[i]);
+        assignment[modul].push(rides[i]);
       } else{
-        assignment[assignment.length-1].push(rides[i]);
+        assignment[0].push(rides[i]);
       }
     }
   }
